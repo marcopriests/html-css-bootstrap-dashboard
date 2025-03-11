@@ -14,19 +14,98 @@
 </head>
 
 <body>
-    <header class="bg-dark text-light p-2">
-        <div class="d-flex justify-content-between align-items-center">
-            <img src="./img/duck.png" alt="Logo" class="logo">
-            <i class="fa-solid fa-bars btn btn-outline-light"></i>
-            
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand" href="#"><img src="./img/duck.png" alt="" class="logo"></a>
 
+            <!-- menu sm/md -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <!-- menu lg -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#">Catalogo Libri</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Anagrafica Utenti</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" aria-disabled="true">Storico Prestiti</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" aria-disabled="true">Help</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Cerca</button>
+                </form>
+            </div>
         </div>
+    </nav>
 
+    <main>
+        <div class="container-md py-4">
+            <div class="row row-cols-lg-2">
+                <!-- catalogo -->
+                <div class="col-10">
+                    <div class="card">
+                        <div class="card-header d-flex justify-between">
+                            <h2>Catalogo Libri</h2>
 
-    </header>
+                            <div class="btn btn-primary">Aggiungi Libro</div>
+                        </div>
+                    </div>
+                </div>
 
-    <main></main>
+                <!-- todo + f.a.q. -->
+                <div class="col-2">
+                    <div class="row row-cols-1 gy-4">
+                        <!-- todo -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header pb-3">
+                                    <h2>Todo</h2>
+                                </div>
+
+                                <ul class="list-group list-group p-4">
+                                    <li class="list-group-item p-3">An item</li>
+                                    <li class="list-group-item p-3">A second item</li>
+                                    <li class="list-group-item p-3">A third item</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- f.a.q. -->
+                        <div class="cols">
+                            <div class="card">
+                                <div class="card-header pb-3">
+                                    <h2>F.A.Q.</h2>
+                                </div>
+
+                                <ul class="list-group list-group p-4">
+                                    <li class="list-group-item p-3">An item</li>
+                                    <li class="list-group-item p-3">A second item</li>
+                                    <li class="list-group-item p-3">A third item</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
