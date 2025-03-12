@@ -49,16 +49,27 @@
                         <a class="nav-link" href="#">Help</a>
                     </li>
                 </ul>
-
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Cerca</button>
-                </form>
             </div>
         </div>
     </nav>
 
     <main>
+        <div class="container-lg">
+            <h1 class="my-4 fw-semibold">Nuovo Libro</h1>
+
+            <div class="row mb-3">
+                <!-- Autore -->
+                <div class="col-6">
+                    <label for="nome-autore" class="form-label">Nome Autore</label>
+                    <input type="text" class="form-control" id="nome-autore" placeholder="Inserisci il nome dell'autore" minlength="3" required>                
+                </div>
+
+                <div class="col-6">
+                    <label for="cognome-autore" class="form-label">Cognome Autore</label>
+                    <input type="text" class="form-control" id="cognome-autore" placeholder="Inserisci il cognome dell'autore" minlength="3" required>                
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 
