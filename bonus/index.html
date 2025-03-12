@@ -97,9 +97,28 @@
                                                 <i class="fas fa-pencil"></i>
                                             </a>
 
-                                            <button class="btn btn-sm btn-outline-secondary">
+                                            <button class="btn btn-sm btn-outline-secondary"  data-bs-toggle="modal" data-bs-target="#delete-modal">
                                                 <i class="fas fa-trash"></i>
                                             </button>
+
+                                            <div class="modal fade" id="delete-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header bg-body-secondary">
+                                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Attenzione!</h1>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                      Sei sicuro di voler eliminare <strong>I pilastri della terra</strong> dal catalogo libri?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">No, annulla</button>
+                                                      <button type="button" class="btn btn-danger">Si, elimina</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              
 
                                             <a class="btn btn-sm btn-outline-secondary" href="./book-detail.html">
                                                 <i class="fas fa-eye"></i>
@@ -491,6 +510,12 @@
             
         </div>
     </main>
+
+    <footer class="bg-dark text-center text-secondary py-3 position-absolute bottom-0 w-100">
+        <div>
+            Happy reading!
+        </div>
+    </footer>
 </body>
 
 </html>
